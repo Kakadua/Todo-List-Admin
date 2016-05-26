@@ -1,0 +1,17 @@
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\bin\Debug\ToDoList_Admin_WPF.exe.config
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\bin\Debug\ToDoList_Admin_WPF.exe
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\bin\Debug\ToDoList_Admin_WPF.pdb
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.csprojResolveAssemblyReference.cache
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\LoginScreen.g.cs
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\App.g.cs
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF_MarkupCompile.cache
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF_MarkupCompile.lref
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\LoginScreen.baml
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.g.resources
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.Properties.Resources.resources
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.csproj.GenerateResource.Cache
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.exe
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\ToDoList_Admin_WPF.pdb
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\MainWindow.g.cs
+c:\users\p\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\obj\Debug\MainWindow.baml
+C:\Users\P\documents\visual studio 2015\Projects\ToDoList_Admin_WPF\ToDoList_Admin_WPF\bin\Debug\MySql.Data.dll
