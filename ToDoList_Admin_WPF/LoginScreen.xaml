@@ -11,7 +11,7 @@
         <Label x:Name="usernameLabel" Content="Username" Margin="332,154,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="335,212,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="usernameTextBox" Height="22" Margin="277,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" HorizontalAlignment="Left" TextChanged="usernameTextBox_TextChanged"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="277,243,0,0" VerticalAlignment="Top" Width="180" Height="22"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="277,243,0,0" VerticalAlignment="Top" Width="180" Height="22" KeyDown="OnKeyDownHandler"/>
         <CheckBox x:Name="checkBox" Content="Remember me" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="277,327,0,0"/>
         <Button x:Name="logIn" Content="Log In" HorizontalAlignment="Left" Margin="332,288,0,0" VerticalAlignment="Top" Width="76" Click="login"/>
 

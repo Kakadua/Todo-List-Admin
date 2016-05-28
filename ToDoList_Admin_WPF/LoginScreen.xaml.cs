@@ -50,6 +50,7 @@ namespace ToDoList_Admin_WPF
             {
                 MainWindow mainWindow = new MainWindow(conn);
                 mainWindow.Show();
+                this.Close();
             }
         }
 
@@ -70,7 +71,15 @@ namespace ToDoList_Admin_WPF
 
         private void usernameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
+
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                login(null, null);
+            }
+        }
+
     }
 }
