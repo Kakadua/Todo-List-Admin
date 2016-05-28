@@ -23,7 +23,7 @@ namespace ToDoList_Admin_WPF
     /// </summary>
     public partial class LoginScreen : Window
     {
-
+       User user;  
        MySqlConnection conn;
         public LoginScreen()
         {
@@ -48,7 +48,7 @@ namespace ToDoList_Admin_WPF
         {
             if(validateUser(usernameTextBox.Text, passwordBox.Password))
             {
-                MainWindow mainWindow = new MainWindow(conn);
+                MainWindow mainWindow = new MainWindow(conn, this.user);
                 mainWindow.Show();
                 this.Close();
             }
@@ -57,11 +57,18 @@ namespace ToDoList_Admin_WPF
         private Boolean validateUser(string user, string pass)
         {
             string sql = "SELECT * FROM users WHERE username='"+user+"' AND password='"+pass+"'";
+            //string sql = "SELECT * FROM users";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
-            int numUsers = Convert.ToInt32(cmd.ExecuteScalar());
-            if(numUsers> 0)
+            MySqlDataReader sqlReader = cmd.ExecuteReader();
+            
+
+            if (sqlReader.HasRows)
             {
+                sqlReader.Read();
+                this.user = new User((int)sqlReader.GetInt64(0));
+                sqlReader.Close();
                 return true;
+
             }
             else
             {

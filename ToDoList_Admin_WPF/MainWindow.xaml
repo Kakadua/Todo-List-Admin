@@ -17,19 +17,19 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <TextBox x:Name="assigneeTextBox" HorizontalAlignment="Left" Height="23" Margin="856,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <DatePicker HorizontalAlignment="Left" Margin="856,126,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Name="dueDatePicker" HorizontalAlignment="Left" Margin="856,126,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="viewButton" Content="View Details" HorizontalAlignment="Left" Margin="175,81,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
-        <Button x:Name="editButton" Content="Edit" HorizontalAlignment="Left" Margin="1044,55,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
-        <Button x:Name="doneButton" Content="Mark as Done" HorizontalAlignment="Left" Margin="1044,100,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
+        <Button x:Name="editButton" Content="Edit" HorizontalAlignment="Left" Margin="1044,73,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
+        <Button x:Name="doneButton" Content="Mark as Done" HorizontalAlignment="Left" Margin="1044,118,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
         <Label x:Name="statusLabel" Content="Status" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="45"/>
         <Label x:Name="displaynameLabel" Content="Display Name" HorizontalAlignment="Left" Margin="175,24,0,0" VerticalAlignment="Top" Width="87"/>
         <Label x:Name="descriptionLabel" Content="Description" HorizontalAlignment="Left" Margin="326,24,0,0" VerticalAlignment="Top" Width="136"/>
         <Label x:Name="assigneeLabel" Content="Assignee" HorizontalAlignment="Left" Margin="856,24,0,0" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="dueDateLabel" Content="Due Date" HorizontalAlignment="Left" Margin="856,95,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="1044,10,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
+        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="1044,28,0,0" VerticalAlignment="Top" Width="124" Height="40" Click="saveButton_Click"/>
         <Label x:Name="priorityLabel" Content="Priority" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="priorityComboBox" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="assigneeComboBox" HorizontalAlignment="Left" Margin="856,50,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
