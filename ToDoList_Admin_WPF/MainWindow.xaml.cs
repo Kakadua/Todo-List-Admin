@@ -108,15 +108,15 @@ namespace ToDoList_Admin_WPF
             }
         }
 
-        //Used to reset the text boxes etc
+        //Used to reset the text boxes,RT boxes, comboboxes and datepicker
         private void resetContainers()
         {
             displaynameTextBox.Text = "";
             descriptionRichTextBox.Document.Blocks.Clear();
-            //assigneeComboBox.
-            //this.dueDatePicker.
-
-
+            assigneeComboBox.SelectedItem = null;
+            statusComboBox.SelectedItem = null;
+            priorityComboBox.SelectedItem = null;
+            this.dueDatePicker.SelectedDate = null;
         }
 
         private void viewButton_Click(object sender, RoutedEventArgs e)
