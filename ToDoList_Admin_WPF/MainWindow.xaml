@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Todo List - Admin" Height="500" Width="1200">
     <Grid>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="300" Margin="0,170,0,0" VerticalAlignment="Top" Width="1200"/>
         <ComboBox x:Name="statusComboBox" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="displaynameTextBox" HorizontalAlignment="Left" Height="23" Margin="175,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <RichTextBox x:Name="descriptionRichTextBox" HorizontalAlignment="Left" Height="100" Margin="326,50,0,0" VerticalAlignment="Top" Width="500">
@@ -30,6 +29,7 @@
         <Label x:Name="priorityLabel" Content="Priority" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="priorityComboBox" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="assigneeComboBox" HorizontalAlignment="Left" Margin="856,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Height="296" Width="1172" SelectionChanged="dataGrid_SelectionChanged"/>
 
     </Grid>
 </Window>
