@@ -15,6 +15,11 @@ using MySql.Data.MySqlClient;
 
 namespace ToDoList_Admin_WPF
 {
+
+    //TODO convert all the variables to correct format before outputing them
+    //TODO Finish the reset
+    //TODO make sure that the listbox updates on mainwindow load
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -69,6 +74,54 @@ namespace ToDoList_Admin_WPF
             cmd.ExecuteNonQuery();
             MessageBox.Show("Added: " + displaynameTextBox.Text, "Added");
 
+            resetContainers();
+
+            updateListBox();
+        }
+
+        //Updates the list box with information from the database
+        public void updateListBox()
+        {
+            //MYSQL filter and query
+            string fetchThis = "SELECT * FROM list";
+            MySqlCommand fetch = new MySqlCommand(fetchThis, conn);
+            fetch.ExecuteNonQuery();
+
+            //MYSQL datareader collecting data data from the database and then adding all the items to the listbox
+            using(MySqlDataReader fetcher = fetch.ExecuteReader())
+            {
+            listBox.Items.Clear();
+                while (fetcher.Read())
+                {
+                    int id = fetcher.GetInt32("ID");
+                    string description = fetcher.GetString("description");
+                    string displayName = fetcher.GetString("displayName");
+                    int status = fetcher.GetInt32("status");
+                    int date = fetcher.GetInt32("date");
+                    int assignee = fetcher.GetInt32("assignee");
+                    int dueDate = fetcher.GetInt32("dueDate");
+                    int priority = fetcher.GetInt32("priority");
+
+                    //Adds the collected data to the listbox
+                    listBox.Items.Add(String.Format("{0} | {1} | {2} | {3} | {4} | {5} | {6} | {7}", id, displayName, description, status, date, assignee, dueDate, priority));
+                }
+            }
+        }
+
+        //Used to reset the text boxes etc
+        private void resetContainers()
+        {
+            displaynameTextBox.Text = "";
+            descriptionRichTextBox.Document.Blocks.Clear();
+            //assigneeComboBox.
+            //this.dueDatePicker.
+
+
+        }
+
+        private void viewButton_Click(object sender, RoutedEventArgs e)
+        {
+            updateListBox();
         }
     }
 }

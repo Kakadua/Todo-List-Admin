@@ -30,8 +30,8 @@ namespace ToDoList_Admin_WPF
             InitializeComponent();
             string myConnectionString;
 
-            myConnectionString = "server=127.0.0.1;uid=test;" +
-                "pwd=password;database=todolist;";
+            myConnectionString = "server=127.0.0.1;uid=root;" +
+                "pwd=Kakadua!;database=todolist;";
 
             try
             {

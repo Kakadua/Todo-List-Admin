@@ -18,7 +18,7 @@
             </FlowDocument>
         </RichTextBox>
         <DatePicker Name="dueDatePicker" HorizontalAlignment="Left" Margin="856,126,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="viewButton" Content="View Details" HorizontalAlignment="Left" Margin="175,81,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
+        <Button x:Name="viewButton" Content="View Details" HorizontalAlignment="Left" Margin="175,81,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="viewButton_Click"/>
         <Button x:Name="editButton" Content="Edit" HorizontalAlignment="Left" Margin="1044,73,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
         <Button x:Name="doneButton" Content="Mark as Done" HorizontalAlignment="Left" Margin="1044,118,0,0" VerticalAlignment="Top" Width="124" Height="40"/>
         <Label x:Name="statusLabel" Content="Status" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="45"/>
